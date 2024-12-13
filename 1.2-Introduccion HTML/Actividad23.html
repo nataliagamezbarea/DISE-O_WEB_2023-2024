@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 22</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+      }
+
+      .top-bar {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        padding: 5px;
+      }
+
+      .top-bar a {
+        margin-left: 15px;
+      }
+
+      .logo img {
+        max-width: 100px;
+        height: auto;
+      }
+
+      .main-nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+      }
+
+      .main-nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .hero {
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid #333;
+      }
+
+      .articles,
+      .additional-articles {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .article-image,
+      .additional-articles .article-image {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .articles img,
+      .additional-articles img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+
+      .articles article,
+      .additional-articles article {
+        flex: 2;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .media {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .media video {
+        width: 100%;
+      }
+
+      footer {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      footer article {
+        width: 45%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/Logo.png" alt="Logo" />
+      </div>
+      <div class="top-bar">
+        <a href="#">Sobre mí</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <a href="#">Categoría 1</a>
+      <a href="#">Categoría 2</a>
+      <a href="#">Categoría 3</a>
+      <a href="#">Categoría 4</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Trabaja duro para ser vago</h1>
+    </section>
+
+    <section class="articles">
+      <div class="article-image">
+        <img
+          src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97"
+          alt="Imagen del artículo"
+        />
+      </div>
+      <article>
+        <h2>Lorem fistrum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+          minim veniam, quis nostrud exercitation.
+        </p>
+        <a href="#" class="read-more">Leer más</a>
+      </article>
+    </section>
+
+    <section class="media">
+      <video controls>
+        <source src="Video/HarakiriTrailer.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </section>
+
+    <section class="additional-articles">
+      <article>
+        <h2>Lorem fistrum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+          minim veniam, quis nostrud exercitation.
+        </p>
+        <a href="#" class="read-more">Leer más</a>
+      </article>
+      <div class="article-image">
+        <img
+          src="https://fotografias.lasexta.com/clipping/cmsimages01/2022/08/09/3FFA8546-05CE-4608-9B69-6602D02A4C58/cachorro-pomsky_103.jpg?crop=1183,887,x0,y0&width=1200&height=900&optimize=low&format=webply"
+          alt="Imagen del artículo"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <article>
+        <h3>Sabías que...</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+          minim veniam, quis nostrud exercitation.
+        </p>
+      </article>
+      <article>
+        <h3>Contacto</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+          minim veniam, quis nostrud exercitation.
+        </p>
+      </article>
+    </footer>
+  </body>
+</html>

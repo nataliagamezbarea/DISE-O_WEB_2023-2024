@@ -1,0 +1,17 @@
+.boxes {
+  border: 3px solid grey;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+.box1 {
+  background-color: gold;
+}
+.box2 {
+  background-color: tomato;
+}
+.box3 {
+  background-color: dodgerblue;
+}

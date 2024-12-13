@@ -1,0 +1,110 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.box {
+  background: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background: dodgerblue;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.full-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4,1fr) ;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2em;
+  height: 100%;
+  padding: 10px;
+
+  grid-template-areas:
+    "img1 img2 img2"
+    "img3 img2 img2"
+    "img4 img5 img6"
+    "img4 img7 img8";
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.grid-item-2 {
+  grid-area: img2;
+}
+
+.grid-item-4 {
+  grid-area: img4;
+}
+
+.grid-item-5 {
+  grid-area: img5;
+}
+
+.grid-item-6 {
+  grid-area: img6;
+}
+
+.grid-item-7 {
+  grid-area: img7;
+}
+
+.grid-item-8 {
+  grid-area: img8;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr) / repeat(2fr , 1fr);
+
+    /* asignan nombres a las celdas y si agarra las que no tienen asignadas*/
+    grid-template-areas:
+      "img1 img3"
+      "img2 img2"
+      "img2 img2"
+      "img4 img5"
+      "img4 img6"
+      "img7 img8";
+
+   justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .box {
+    padding: 0.5cm;
+  }
+}

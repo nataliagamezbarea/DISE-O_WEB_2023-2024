@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura de Iframes</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .verde {
+        background-color: green;
+        height: 20%;
+        width: 100%;
+      }
+
+      .fila-principal {
+        display: flex;
+        height: 80%;
+        width: 100%;
+      }
+
+      .rosa {
+        background-color: pink;
+        flex: 1;
+        height: 100%;
+      }
+
+      .amarillo-gris-marron {
+        flex: 3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .amarillo {
+        background-color: #ffffcc;
+        flex: 1;
+        height: 50%;
+      }
+
+      .gris-marron {
+        display: flex;
+        height: 50%;
+        width: 100%;
+      }
+
+      .gris {
+        background-color: gray;
+        flex: 2;
+      }
+
+      .marron {
+        background-color: #a52a2a;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="verde">
+      <iframe
+        src="https://marcosruiz.github.io/posts/atajos-de-teclado/"
+      ></iframe>
+    </div>
+
+    <div class="fila-principal">
+      <div class="rosa">
+        <iframe src="https://olgacarreras.blogspot.com/"></iframe>
+      </div>
+      <div class="amarillo-gris-marron">
+        <div class="amarillo">
+          <iframe
+            src="https://marcosruiz.github.io/posts/trabajar-visual-studio-code/"
+          ></iframe>
+        </div>
+        <div class="gris-marron">
+          <div class="gris">
+            <iframe
+              src="https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+            ></iframe>
+          </div>
+          <div class="marron">
+            <iframe src="https://es.wikipedia.org/wiki/ARPANET"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

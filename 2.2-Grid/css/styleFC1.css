@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: 100%;
+  padding: 10px;
+  border: 3px solid gray;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.grid-item-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-item4 {
+  grid-row: span 2;
+}

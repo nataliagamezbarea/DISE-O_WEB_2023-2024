@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  /* grid-template-rows: 100px 100px 100px; */
+  /* grid-template-columns: 100px 100px; */
+  /* grid-template-rows: repeat(3,100px); */
+  /* grid-template: repeat(3, 100px) / repeat(2, 100px) / 30% 70%; */
+  grid-template: 100px auto 100px / 30fr 70fr;
+  border: 3px solid lightblue;
+  /* height: 100vh; */
+  /* justify-content: center;
+  align-content: center; */
+  height: 100vh;
+  /* justify-items: center;
+  align-items: center; */
+  gap: 10px;
+  /* grid-template-areas: "header header" "sidebar main" "footer footer"; */
+  grid-template-areas: "header header" "sidebar main" ". footer";
+}
+
+.box {
+  /* height: 5rem;
+  width: 5rem; */
+  background: gold;
+}
+
+/* .box-one { */
+/* grid-column: 2; */
+/* grid-column: 1/3; 1 a 3 línea */
+/* grid-column: 1/-1;  1 a -1 (última) */
+/* equivalente */
+/* grid-column: 1/span 2;  1 a 2 con span */
+/* grid-area: 1/1/2/3; row, column, row, column */
+
+/* ------------------------------------------------------ */
+/* grid-area: 2/1/2/3; fila 2 columna 1 , fila 2 columna 3 */
+
+/* grid-row: 2; */
+/* grid-area: 1/1/3/4;  1,1 a 3,4 Agarrar todas las celdas */
+
+/* } */
+
+.box-one {
+  grid-area: header;
+}
+
+.box-four {
+  grid-area: footer;
+}
